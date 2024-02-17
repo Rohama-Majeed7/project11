@@ -97,8 +97,9 @@
 <!-- ====================== -->
 <div class="task-2">
    <label for="auto-task">start hour</label><br>
-   <input type="date" id="duration" name="time" placeholder="09-9-2009">
-   <input type="date" id="duration" name="time" placeholder="09-9-2009">
+   <div class="input" style="display: flex; gap: 5px;"><input style="width: 50%;display: inline;" type="date" id="duration" name="time" placeholder="09-9-2009">
+   <input style="width: 50%;display: inline;" type="date" id="duration" name="time" placeholder="09-9-2009">
+</div>
 </div>
 <!-- ====================== -->
 <div class="task-2">
@@ -332,13 +333,14 @@
                 <div class="line2">
                     <div class="cal">
                      <button class="show-cal" onclick="toggleCalendar()"><i class="fas fa-chevron-down"></i></button>
-                            <span class="mon">August</span>
+                    <span class="mon">August</span>
                     </div>
                         <div class="date">
                             <i class="fas fa-chevron-down"></i>
-                            <input type="date" placeholder="09-9-2009">
+                            <!-- <input type="date" placeholder="09-9-2009"> -->
+                            <span>08-08 / 14-08</span>
                         </div>
-                    </div>
+                </div>
                 </div>
                 <!-- =========================== -->
                <div id="sec2-tab1" class="tab-content tab-active">

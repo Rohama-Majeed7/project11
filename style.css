@@ -31,11 +31,14 @@ body {
 .task-1 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 .task-1 i {
   color: #fff;
-  padding: 3px;
-  border-radius: 3px;
+  padding: 2px;
+  border-radius: 5px;
   text-align: center;
   border: 1px solid #fff;
 }
@@ -73,7 +76,12 @@ body {
   margin: 0;
   color: #fff;
 }
-
+.sec2-tabs{
+  padding: 3px;
+}
+.tabs{
+  margin: 25px 0;
+}
 .tab,
 .sec2-tab {
   cursor: pointer;
@@ -127,7 +135,7 @@ body {
 #tab2 {
   width: 95%;
 }
-.task-2 label,
+.task-2
 select,
 option,
 input {
@@ -135,16 +143,17 @@ input {
   padding: 5px;
   background-color: #2c2b2b;
   border: none;
-  margin: 5px 0;
+  margin: 15px 0;
   color: #cfcbcb;
+  border-radius: 2px;
 }
 .task-2 label {
   background-color: transparent;
-  margin: 3px 0;
+  margin:  0;
 }
 .task-btns {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   width: 100%;
 }
 .btn1,
@@ -154,6 +163,7 @@ input {
   color: #191919;
   border: none;
   width: 50%;
+  border-radius: 3px;
 }
 .btn2 {
   background-color: #b3891b;
@@ -293,7 +303,7 @@ input {
 .line1 {
   display: flex;
   gap: 7px;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .line1-text {
@@ -314,32 +324,35 @@ input {
 .line2 {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: white;
   gap: 5px;
 }
 .date {
   display: flex;
   align-items: center;
-  gap: 3px;
+  justify-content: center;
+  gap: 5px;
   background-color: #2c2b2b;
-  /* padding: 2px; */
   border: 1px solid #fff;
   border-radius: 4px;
+  padding: 6px;
+  cursor: pointer;
 }
 .cal {
   background-color: #2c2b2b;
   padding: 6px;
   border: 1px solid #fff;
   border-radius: 5px;
+  cursor: pointer;
 }
 .dates {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 3px;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 5px;
   align-items: center;
-  /* width: 90%; */
   margin: 10px auto;
 }
 .day {
@@ -348,6 +361,8 @@ input {
   background-color: #2c2b2b;
   color: #fff;
   border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
 }
 .line3 {
   display: grid;
@@ -358,8 +373,9 @@ input {
   display: flex;
   justify-content: space-evenly;
   background-color: #2c2b2b;
-  padding: 3px;
+  padding: 5px;
   border-radius: 4px;
+  cursor: pointer;
 }
 .icon {
   display: flex;
@@ -384,7 +400,8 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2px;
+  padding: 4px;
+  margin-bottom: 3px;
 }
 .pink {
   background-color: #ea4a9d;
@@ -394,7 +411,7 @@ input {
 }
 .text {
   display: flex;
-  gap: 2px;
+  gap: 4px;
   align-items: center;
   color: #fff;
 }
@@ -405,8 +422,8 @@ input {
   color: #fff;
 }
 .grn-dot {
-  height: 10px;
-  width: 10px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
   background-color: #279a4f;
 }
@@ -420,10 +437,11 @@ input {
   display: flex;
   gap: 3px;
   justify-content: center;
+  padding: 5px;
 }
 .line4 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
   gap: 3px;
   margin: 10px 0;
 }
@@ -431,7 +449,7 @@ input {
   background-color: #2c2b2b;
   padding: 4px;
   border-radius: 3px;
-  height: 215px;
+  height: 230px;
 }
 .profile:hover {
   border: 1px solid #b3891b;
@@ -478,6 +496,7 @@ input {
   color: white;
   padding: 5px;
   border-radius: 4px;
+  width: 160px;
 }
 .pin span,
 .p span {
@@ -585,7 +604,7 @@ td:hover {
     margin: 5px auto;
   }
   .line1 {
-    gap: 6rem;
+    gap: 8rem;
     justify-content: left;
   }
   .line2 {
@@ -594,10 +613,21 @@ td:hover {
   .section-2 {
     padding: 5px;
   }
-  .task-btns {
+  #tab2 .task-btns {
     position: absolute;
-    bottom: 2px;
+    bottom: 0px;
     right: 2px;
     left: 2px;
+    /* margin-top: 100px; */
+   }
+  .tasks{
+    position: relative;
+  }
+  .tabs{
+    padding: 5px;
+    justify-content: center;
+  }
+  .sec2-tabs{
+    gap: 50px;
   }
 }
