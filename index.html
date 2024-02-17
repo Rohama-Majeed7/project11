@@ -287,16 +287,52 @@
         <!-- end of section-1 -->
         <!-- section-2 -->
         <section class="section-2">
+            <!-- cal -->
+<div id="calendar-container">
+
+  <div id="calendar-header">
+    <button class="arrow-button" onclick="previousMonth()"><i class="fas fa-chevron-left"></i></button>
+    <div id="month-year-display">
+      <select id="month-selector" onchange="changeMonth()">
+        <option value="0">January</option>
+        <option value="1">February</option>
+        <option value="2">March</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">June</option>
+        <option value="6">July</option>
+        <option value="7">August</option>
+        <option value="8">September</option>
+        <option value="9">October</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+      </select>
+      <span id="current-year">2024</span>
+      <button class="arrow-button" onclick="nextYear()">&#9655;</button>
+    </div>
+    <button class="arrow-button" onclick="nextMonth()"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  <div id="calendar-body"></div>
+</div>
+
+            <!-- ======= -->
             <div class="months">
                 <div class="line1">
-                    <div class="line1-text">
-                        <button class="sec2-btn1">week</button>
-                        <button class="sec2-btn2">month</button>
+<ul class="sec2-tabs">
+  <li class="sec2-tab" onclick="changeSecTab('sec2-tab1')">
+    week
+    <div class="highlight-line"></div>
+  </li>
+   <li class="sec2-tab" onclick="changeSecTab('sec2-tab2')">
+   month
+   <div class="highlight-line"></div>
+ </li>
+  </ul>
+                <div class="line2">
+                    <div class="cal">
+                     <button class="show-cal" onclick="toggleCalendar()"><i class="fas fa-chevron-down"></i></button>
+                            <span class="mon">August</span>
                     </div>
-                    <div class="line2">
-                        <div class="cal">
-                            calendar
-                        </div>
                         <div class="date">
                             <i class="fas fa-chevron-down"></i>
                             <input type="date" placeholder="09-9-2009">
@@ -304,6 +340,7 @@
                     </div>
                 </div>
                 <!-- =========================== -->
+               <div id="sec2-tab1" class="tab-content tab-active">
                 <div class="dates">
                     <div class="day">
                         <p>Mon.08-08</p>
@@ -817,7 +854,148 @@
              <!-- ================= -->
              <div class="profile"></div>
              <div class="profile"></div>
-                <!-- =========================== -->
+             </div>
+               </div>
+             <!-- end of section-2 tab-centent -->
+             <!-- section-2 tab2 content -->
+        <div id="sec2-tab2" class="tab-content">
+                <div class="dates">
+                    <div class="day">
+                        <p>Mon</p>
+                    </div>
+                    <div class="day">
+                        <p>tue</p>
+                    </div>
+                    <div class="day">
+                        <p>wed</p>
+                    </div>
+                <div class="day">
+                        <p>thu</p>
+                    </div>
+                <div class="day">
+                        <p>fri</p>
+                    </div>
+                    <div class="day">
+                        <p>sat</p>
+                    </div>
+                    <div class="day">
+                        <p>sun</p>
+                    </div>
+                </div>
+                <!-- =================== -->
+            <div class="line4">
+                <div class="profile">
+                    <span>1</span>
+                    <div class="orange">
+                        <span>scanner</span>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                </div> 
+                <div class="profile">
+                    <span>2</span>
+                </div>    
+                <div class="profile">
+                    <span>3</span>
+                </div>    
+                <div class="profile">
+        <span>4</span>
+        <div class="pin">
+            <span>packing</span>
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+    </div> 
+        <!-- ========== -->
+                <div class="profile">
+                    <span>5</span>
+                </div>    
+                <div class="profile"><span>6</span></div>
+                    <!-- ======= -->
+                <div class="profile">
+                    <span>7</span>
+            <div class="blu">
+            <span>templating</span>
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+                </div>    
+                <div class="profile"><span>8</span></div>    
+                <div class="profile"><span>9</span></div>    
+                <div class="profile"><span>10</span></div>    
+                <div class="profile">
+                    <span>11</span>
+                            <div class="pin">
+            <span>fabrication</span>
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+                </div>    
+                <div class="profile"><span>12</span></div>    
+                <div class="profile"><span>13</span></div>    
+                <div class="profile">
+                    <span>14</span>
+                            <div class="gr">
+            <span>cutting</span>
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+                </div>    
+                <div class="profile"><span>15</span></div>    
+                <div class="profile">
+                    <span>16</span>
+        <div class="orange">
+            <span>scanner</span>
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+                </div>    
+                <div class="profile"><span>17</span></div>    
+                <div class="profile"><span>18</span></div>    
+                <div class="profile">
+                    <span>19</span>
+                        <div class="sky">
+            <span>transport</span>
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+                </div>    
+                <div class="profile"><span>20</span></div>    
+                <div class="profile"><span>21</span></div>    
+                <div class="profile"><span>22</span></div>    
+                <div class="profile">
+                    <span>23</span>
+                        <div class="pin">
+            <span>packing</span>
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+                </div>    
+                <div class="profile"><span>24</span></div>    
+                <div class="profile"><span>25</span></div>    
+                <div class="profile"><span>26</span></div>    
+                <div class="profile"><span>27</span></div>    
+                <div class="profile">
+                    <span>28</span>
+                        <div class="yel">
+            <span>installation</span>
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+                </div> 
+                <div class="profile"><span>29</span>
+                <div class="combine">
+                    <div class="p">
+                        <span>packing</span>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>
+                     <div class="o">
+     <span>scanner</span>
+     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+ </div>
+                </div>
+                </div>    
+                <div class="profile"><span>30</span></div>    
+                <div class="profile"><span>31</span></div>    
+                <div class="profile"><span>32</span></div>    
+                <div class="profile"><span>33</span></div>    
+                <div class="profile"><span>34</span></div>    
+                <div class="profile"><span>35</span></div>    
+            <!-- =========================== -->
+            </div>
+                     <!-- end of tab2 content -->
+               </div>
             </div>
         </section>
         <!-- end of section-2  -->

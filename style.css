@@ -56,9 +56,9 @@ body {
   padding: 8px;
   height: 100%;
   margin: 0 auto;
-  /* height: 100vh; */
 }
-.tabs {
+.tabs,
+.sec2-tabs {
   display: flex;
   list-style: none;
   gap: 1rem;
@@ -67,14 +67,17 @@ body {
   color: #fff;
 }
 
-.tab {
+.tab,
+.sec2-tab {
   cursor: pointer;
   position: relative;
   padding-bottom: 10px;
   width: 100%;
+  font-weight: bold;
 }
 
-.highlight-line {
+.highlight-line,
+.sec2-tab .highlight-line {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -86,16 +89,25 @@ body {
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
-.tab:hover .highlight-line {
+.tab:hover .highlight-line,
+.sec2-tab:hover .highlight-line {
   transform: scaleX(1);
 }
 .content {
   display: none;
   width: 100%;
-  /* height: 100vh; */
 }
 
 .content.active {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.tab-content {
+  display: none;
+  width: 100%;
+}
+.tab-content.tab-active {
   display: block;
   width: 100%;
   height: 100%;
@@ -165,13 +177,6 @@ input {
   border: 1px solid #b3891b;
   height: 10px;
   width: 10px;
-}
-#tab1,
-#tab2,
-#tab3,
-#tab4 {
-  /* height: 100vh; */
-  /* margin: 0 auto; */
 }
 .tak-5 {
   padding: 20px;
@@ -267,6 +272,7 @@ input {
 .section-2 {
   padding: 1px;
   width: 100%;
+  position: relative;
 }
 .line1 {
   display: flex;
@@ -411,6 +417,148 @@ input {
 }
 .profile:hover {
   border: 1px solid #b3891b;
+}
+#sec2-tab2 .profile span {
+  color: white;
+  font-weight: bold;
+}
+#sec2-tab2 .profile {
+  position: relative;
+}
+.orange,
+.pin,
+.blu,
+.gr,
+.sky,
+.combine,
+.yel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  right: 2px;
+  gap: 2px;
+}
+.combine {
+  flex-direction: column;
+  gap: 8px;
+  bottom: 0px;
+  align-items: center;
+  margin: 0 auto;
+}
+.orange span,
+.pin span,
+.blu span,
+.gr span,
+.sky span,
+.yel span,
+.o span,
+.p span {
+  background-color: #9a3d29;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+.pin span,
+.p span {
+  background: #ea4a9d;
+}
+.blu span {
+  background-color: #1b67bf;
+}
+.gr span {
+  background-color: #279a4f;
+}
+.sky span {
+  background-color: #007984;
+}
+.yel span {
+  background-color: #b3891b;
+}
+.orange i,
+.pin i,
+.blu i,
+.sky i,
+.yel i,
+.p i,
+.o i,
+.gr i {
+  color: #fff;
+  background: #191919;
+  padding: 8px 4px;
+  border-radius: 4px;
+}
+.c {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+/* calendar */
+#calendar-container {
+  max-width: 300px;
+  background-color: #353942;
+  padding: 4px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+  left: 10%;
+  display: none;
+}
+#calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px auto;
+  border-bottom: 1px solid #cfcbcb;
+}
+#calendar-body {
+  border: none;
+  border-bottom: 1px solid #cfcbcb;
+  padding: 10px 0;
+}
+.show-cal{
+  background: transparent;
+  color: #fff;
+  border: none;
+}
+#month-year-display {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.arrow-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 10px;
+  color: white;
+  margin: 5px;
+}
+
+select {
+  font-size: 16px;
+  background: transparent;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 3px;
+  text-align: center;
+  border: none;
+  color: #fff;
+}
+td:hover {
+  background-color: #1b67bf;
 }
 @media screen and (min-width: 1150px) {
   .main {

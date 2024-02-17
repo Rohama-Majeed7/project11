@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Calendar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #calendar-container {
+      max-width: 300px;
+      margin: 50px auto;
+    }
+
+    #calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+
+    #calendar-body {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    #month-year-display {
+      display: flex;
+      align-items: center;
+    }
+
+    .arrow-button {
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 18px;
+      margin: 0 5px;
+    }
+
+    select {
+      font-size: 16px;
+      margin-right: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<div id="calendar-container">
+  <div id="calendar-header">
+    <button class="arrow-button" onclick="previousMonth()">&#9665;</button>
+    <div id="month-year-display">
+      <select id="month-selector" onchange="changeMonth()">
+        <option value="0">January</option>
+        <option value="1">February</option>
+        <option value="2">March</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">June</option>
+        <option value="6">July</option>
+        <option value="7">August</option>
+        <option value="8">September</option>
+        <option value="9">October</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+      </select>
+      <span id="current-year">2024</span>
+      <button class="arrow-button" onclick="nextYear()">&#9655;</button>
+    </div>
+    <button class="arrow-button" onclick="nextMonth()">&#9655;</button>
+  </div>
+  <div id="calendar-body"></div>
+</div>
+
+<script>
+</script>
+
+</body>
+</html>
