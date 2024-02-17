@@ -10,7 +10,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #2c2b2b;
 }
-.head{
+.head {
   color: #fff;
   font-size: 1.3rem;
   padding: 5px;
@@ -21,6 +21,7 @@ body {
   display: grid;
   height: 800px;
   margin: 1rem auto;
+  gap: 20px;
 }
 .section-2,
 .section-1 {
@@ -76,10 +77,10 @@ body {
   margin: 0;
   color: #fff;
 }
-.sec2-tabs{
+.sec2-tabs {
   padding: 3px;
 }
-.tabs{
+.tabs {
   margin: 25px 0;
 }
 .tab,
@@ -135,8 +136,7 @@ body {
 #tab2 {
   width: 95%;
 }
-.task-2
-select,
+.task-2 select,
 option,
 input {
   width: 100%;
@@ -149,7 +149,7 @@ input {
 }
 .task-2 label {
   background-color: transparent;
-  margin:  0;
+  margin: 0;
 }
 .task-btns {
   display: flex;
@@ -335,16 +335,16 @@ input {
   gap: 5px;
   background-color: #2c2b2b;
   border: 1px solid #fff;
-  border-radius: 4px;
-  padding: 6px;
+  border-radius: 2px;
   cursor: pointer;
+  padding: 4px;
 }
 .cal {
   background-color: #2c2b2b;
-  padding: 6px;
   border: 1px solid #fff;
-  border-radius: 5px;
+  border-radius: 2px;
   cursor: pointer;
+  padding: 4px;
 }
 .dates {
   display: grid;
@@ -542,6 +542,7 @@ input {
   top: 50px;
   left: 10%;
   display: none;
+  z-index: 1;
 }
 #calendar-header {
   display: flex;
@@ -619,15 +620,19 @@ td:hover {
     right: 2px;
     left: 2px;
     /* margin-top: 100px; */
-   }
-  .tasks{
+  }
+  .tasks {
     position: relative;
   }
-  .tabs{
+  .tabs {
     padding: 5px;
     justify-content: center;
   }
-  .sec2-tabs{
+  .sec2-tabs {
     gap: 50px;
+  }
+  .date,
+  .cal {
+    padding: 6px;
   }
 }
