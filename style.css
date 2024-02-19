@@ -18,7 +18,7 @@ body {
 .main {
   width: 100%;
   display: grid;
-  height: 100vh;
+  height: 92vh;
   margin: 1rem 0;
   gap: 20px;
 }
@@ -26,6 +26,15 @@ body {
 .section-1 {
   background-color: #191919;
   padding: 5px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.section-1::-webkit-scrollbar,.section-2::-webkit-scrollbar{
+  background-color: #cfcbcb;
+  scroll-behavior: smooth;
+  border-radius: 100px;
+  width: 5px;
+  height: 50px;
 }
 .task-1 {
   display: flex;
@@ -55,9 +64,6 @@ body {
   height: 100%;
   background-color: #191919;
   padding: 10px;
-}
-.section-1::-webkit-scrollbar {
-  background-color: transparent;
 }
 .tasks {
   width: 100%;
