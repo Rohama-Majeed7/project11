@@ -29,6 +29,7 @@ body {
   padding: 5px;
   height: 100%;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .section-1::-webkit-scrollbar,.section-2::-webkit-scrollbar{
   background-color: #cfcbcb;
@@ -41,7 +42,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   margin-bottom: 10px;
 }
 .task-1 i {
@@ -447,7 +448,7 @@ input {
 }
 .line4 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(13%, 1fr));
   gap: 3px;
   margin: 10px 0;
 }
@@ -625,6 +626,7 @@ td:hover {
   }
   .section-1{
     width: 100%;
+    padding: 3px;
   }
   .section-2{
     width: 100%;
@@ -659,6 +661,12 @@ td:hover {
   .date,
   .cal {
     padding: 6px;
+  }
+  .task-btns{
+    position: absolute;
+    /* bottom: 3px; */
+    right: 2px;
+    left: 2px;
   }
   /* .task-2 select, */
 /* option, */
