@@ -144,10 +144,10 @@ body {
 option,
 input {
   width: 100%;
-  padding: 5px;
+  padding: 0px;
   background-color: #2c2b2b;
   border: none;
-  margin: 15px 0;
+  /* margin: 10px 0; */
   color: #cfcbcb;
   border-radius: 2px;
 }
@@ -658,4 +658,15 @@ td:hover {
   .cal {
     padding: 6px;
   }
+  .task-2 select,
+option,
+input {
+  width: 100%;
+  padding: 5px;
+  background-color: #2c2b2b;
+  border: none;
+  margin: 15px 0;
+  color: #cfcbcb;
+  border-radius: 2px;
+}
 }
