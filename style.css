@@ -11,6 +11,10 @@ body {
   background-color: #2c2b2b;
   font-size: 13px;
 }
+body::-webkit-scrollbar {
+  background-color: transparent;
+  overflow: hidden;
+}
 .head {
   color: #fff;
   font-size: 1.3rem;
@@ -19,31 +23,52 @@ body {
 .main {
   width: 100%;
   display: grid;
-  height: 98vh;
+  height: 90vh;
   margin: 1rem 0;
   gap: 20px;
 }
-.section-2,
 .section-1 {
   background-color: #191919;
   padding: 5px;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  height: 100vh;
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
 }
-.section-1::-webkit-scrollbar,
-.section-2::-webkit-scrollbar {
+#tab1,
+#tab4 {
+  overflow-y: scroll;
+  height: 85vh;
+}
+#tab1::-webkit-scrollbar,
+#tab4::-webkit-scrollbar {
+  background-color: #cfcbcb;
+  width: 3px;
+  border-radius: 50px;
+}
+.line4::-webkit-scrollbar {
+  background-color: #cfcbcb;
+  width: 3px;
+  border-radius: 50px;
+}
+.section-2 {
+  background-color: #191919;
+  padding: 5px;
+  height: 75vh;
+}
+/* .section-1::-webkit-scrollbar {
   background-color: #cfcbcb;
   scroll-behavior: smooth;
   border-radius: 100px;
   width: 5px;
   height: 50px;
+} */
+.section-2::-webkit-scrollbar {
+  background-color: transparent;
 }
 .task-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 5px; */
   margin-bottom: 10px;
 }
 .task-1 i {
@@ -72,7 +97,7 @@ body {
   padding: 8px;
   height: 100%;
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
 }
 .tabs,
 .sec2-tabs {
@@ -445,6 +470,8 @@ input {
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
   gap: 3px;
   margin: 10px 0;
+  height: 75vh;
+  overflow-y: scroll;
 }
 .profile {
   background-color: #191919;
@@ -643,8 +670,9 @@ td:hover {
     right: 2px;
     left: 2px;
   }
-  .tasks {
-    position: relative;
+  .task-btns {
+    width: 90%;
+    margin: 0 auto;
   }
   .tabs {
     padding: 5px;
@@ -657,26 +685,29 @@ td:hover {
   .cal {
     padding: 6px;
   }
-  .task-btns {
-    position: absolute;
-    bottom: -130px;
-    right: 2px;
-    left: 2px;
-  }
+  /* .task-btns { */
+  /* position: absolute; */
+  /* bottom: -130px; */
+  /* right: 2px; */
+  /* left: 2px; */
+  /* } */
   .line2,
   .line3,
   .line4 {
     grid-template-columns: repeat(auto-fill, minmax(13%, 1fr));
   }
-  /* .task-2 select, */
-  /* option, */
-  /* input { */
-  /* width: 100%; */
-  /* padding: 5px; */
-  /* background-color: #2c2b2b; */
-  /* border: none; */
-  /* margin: 15px 0; */
-  /* color: #cfcbcb; */
-  /* border-radius: 2px; */
-  /* } */
+}
+@media screen and (max-width: 1750px) {
+  #tab1 .task-btns {
+    position: relative;
+    top: 40px;
+  }
+}
+@media screen and (min-width: 1750px) {
+  #tab1 .task-btns {
+    position: absolute;
+    bottom: 0;
+    left: 3px;
+    right: 3px;
+  }
 }
