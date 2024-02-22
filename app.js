@@ -1,12 +1,25 @@
 // tabs
-function changeTab(tabId) {
-  // Hide all content divs
+let activeTabIndex = 0;
+
+function changeTab(index) {
+  // Remove active class from the previously active tab and content
+  document.querySelectorAll(".tab")[activeTabIndex].classList.remove("active");
+  document
+    .querySelectorAll(".tab")
+    [activeTabIndex].querySelector(".highlight-line").style.width = "0";
   document
     .querySelectorAll(".content")
-    .forEach((content) => content.classList.remove("active"));
+    [activeTabIndex].classList.remove("active");
 
-  // Show the selected content
-  document.getElementById(tabId).classList.add("active");
+  // Add active class to the clicked tab and corresponding content
+  const clickedTab = document.querySelectorAll(".tab")[index];
+  clickedTab.classList.add("active");
+  clickedTab.querySelector(".highlight-line").style.width = "100%";
+
+  document.querySelectorAll(".content")[index].classList.add("active");
+
+  // Update the active tab index
+  activeTabIndex = index;
 }
 // ===================== //
 function changeSecTab(tabId) {

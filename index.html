@@ -14,1009 +14,1060 @@
     <title>Document</title>
   </head>
   <body>
-      <main class="main">
-        <!-- section-1 -->
-        <section class="section-1" style="height: 100%;" >
-    <div class="tasks" >
-            <div class="task-1">
-              <span>task</span>
-              <i class="fas fa-times"></i>
+    <main class="main">
+      <!-- section-1 -->
+      <section class="section-1" style="height: 100%">
+        <div class="tasks">
+          <div class="task-1">
+            <span>task</span>
+            <i class="fas fa-times"></i>
+          </div>
+          <!-- ======================== -->
+          <ul class="tabs">
+            <li class="tab" onclick="changeTab(0)">
+              Details
+              <div class="highlight-line"></div>
+            </li>
+            <li class="tab" onclick="changeTab(1)">
+              checlist
+              <div class="highlight-line"></div>
+            </li>
+            <li class="tab" onclick="changeTab(2)">
+              files
+              <div class="highlight-line"></div>
+            </li>
+            <li class="tab" onclick="changeTab(3)">
+              messages
+              <div class="highlight-line"></div>
+            </li>
+          </ul>
+          <!-- tab content -->
+          <div id="tab1" class="content active">
+            <form id="task-form">
+              <div class="task-2">
+                <label for="auto-task">job type</label><br />
+                <select id="job-type" name="job-type">
+                  <option value="kitchen-countertop">Kitchen Countertop</option>
+                </select>
+              </div>
+              <!-- ===================== -->
+              <div class="task-2">
+                <label for="auto-task">department</label><br />
+                <select id="job-type" name="job-type">
+                  <option value="templating">templating</option>
+                </select>
+              </div>
+              <!-- =================== -->
+              <div class="task-2">
+                <label for="auto-task">task name</label><br />
+                <select id="job-type" name="job-type">
+                  <option value="buy something">buy something</option>
+                  <option value="lorem ipsum">lorem ipsum</option>
+                  <option value="lorem ipsum">lorem ipsum</option>
+                  <option value="lorem ipsum">lorem ipsum</option>
+                  <option value="lorem ipsum">lorem ipsum</option>
+                </select>
+              </div>
+              <!-- ============================= -->
+              <div class="task-2">
+                <label for="auto-task">users</label><br />
+                <select id="job-type" name="job-type">
+                  <option value="buy something">martis</option>
+                </select>
+              </div>
+              <!-- =================== -->
+              <div class="task-2">
+                <label for="auto-task">status</label><br />
+                <select id="job-type" name="job-type">
+                  <option value="buy something">aproved</option>
+                </select>
+              </div>
+              <!-- =========================== -->
+              <div class="task-2">
+                <label for="auto-task">duration</label><br />
+                <input
+                  type="time"
+                  id="duration"
+                  name="time"
+                  placeholder="2hrs"
+                />
+              </div>
+              <!-- ======================== -->
+              <div class="task-2">
+                <label for="auto-task">start date</label><br />
+                <input
+                  type="date"
+                  id="duration"
+                  name="time"
+                  placeholder="09-9-2009"
+                />
+              </div>
+              <!-- ====================== -->
+              <div class="task-2">
+                <label for="auto-task">start hour</label><br />
+                <div class="input" style="display: flex; gap: 5px">
+                  <input
+                    style="width: 50%; display: inline"
+                    type="date"
+                    id="duration"
+                    name="time"
+                    placeholder="09-9-2009"
+                  />
+                  <input
+                    style="width: 50%; display: inline"
+                    type="date"
+                    id="duration"
+                    name="time"
+                    placeholder="09-9-2009"
+                  />
+                </div>
+              </div>
+              <!-- ====================== -->
+              <div class="task-2">
+                <label for="auto-task">location</label><br />
+                <input
+                  type="text"
+                  id="duration"
+                  name="time"
+                  placeholder="lorem ipsum"
+                />
+              </div>
+              <!-- ==================== -->
+              <div class="task-2">
+                <label for="auto-task">adress project</label><br />
+                <input
+                  type="text"
+                  id="duration"
+                  name="time"
+                  placeholder="lorem ipsum"
+                />
+              </div>
+              <!-- =================================== -->
+              <div class="task-2">
+                <label for="auto-task">department</label><br />
+                <select id="job-type" name="job-type">
+                  <option value="templating">templating</option>
+                </select>
+              </div>
+              <!-- =========================== -->
+              <div class="task-2">
+                <label for="auto-task">notes</label><br />
+                <input
+                  type="text"
+                  id="duration"
+                  name="time"
+                  placeholder="lorem ipsum"
+                />
+              </div>
+            </form>
+            <!-- ============================ -->
+            <!-- end -->
+            <!-- button -->
+            <div class="task-btns">
+              <button class="btn1">cancel</button>
+              <button class="btn2">save</button>
             </div>
-            <!-- ======================== -->
-            <ul class="tabs">
-              <li class="tab" onclick="changeTab('tab1')">
-                Details
+          </div>
+          <!-- tab-1  end -->
+          <div id="tab2" class="content">
+            <div class="task-3">
+              <div class="task-4">
+                <div class="ts">
+                  <span>create something</span>
+                  <input type="checkbox" class="ts1" />
+                </div>
+                <i class="trash fa fa-trash" aria-hidden="true"></i>
+              </div>
+              <!-- ==================== -->
+              <div class="task-4">
+                <div class="ts">
+                  <span>create something</span>
+                  <input type="checkbox" class="ts1" />
+                </div>
+                <i class="trash fa fa-trash" aria-hidden="true"></i>
+              </div>
+              <!-- ============================= -->
+              <div class="task-4">
+                <div class="ts">
+                  <span>create something</span>
+                  <input type="checkbox" class="ts1" />
+                </div>
+                <i class="trash fa fa-trash" aria-hidden="true"></i>
+              </div>
+              <!-- ==================== -->
+              <div class="task-4">
+                <div class="ts">
+                  <span>create something</span>
+                  <input type="checkbox" class="ts1" />
+                </div>
+                <i class="trash fa fa-trash" aria-hidden="true"></i>
+              </div>
+            </div>
+            <button class="plus">+</button>
+            <div class="task-btns">
+              <button class="btn1">cancel</button>
+              <button class="btn2">save</button>
+            </div>
+          </div>
+          <!-- end of tab2 -->
+          <div id="tab3" class="content">
+            <div class="files">
+              <div class="file">
+                <div class="file1">
+                  <div class="pdf">
+                    <div class="pd">
+                      <i class="fa-regular fa-file-pdf"></i>
+                      <p>fixed</p>
+                    </div>
+                    <i class="fa-regular fa-file"></i>
+                  </div>
+                  <div class="file2">
+                    <input type="time" placeholder="09-9-2009" />
+                  </div>
+                  <div class="file2">
+                    <input type="text" placeholder="  " />
+                  </div>
+                </div>
+                <i class="trash fa-solid fa-trash"></i>
+              </div>
+              <!-- ====================== -->
+              <div class="file">
+                <div class="file1">
+                  <div class="pdf">
+                    <div class="pd">
+                      <i class="fa-regular fa-file-pdf"></i>
+                      <p>fixed</p>
+                    </div>
+                    <i class="fa-regular fa-file"></i>
+                  </div>
+                  <div class="file2">
+                    <input type="time" placeholder="09-9-2009" />
+                  </div>
+                  <div class="file2">
+                    <input type="text" placeholder="  " />
+                  </div>
+                </div>
+                <i class="trash fa-solid fa-trash"></i>
+              </div>
+              <!-- ================================ -->
+              <div class="file">
+                <div class="file1">
+                  <div class="pdf">
+                    <div class="pd">
+                      <i class="fa-regular fa-file-pdf"></i>
+                      <p>fixed</p>
+                    </div>
+                    <i class="fa-regular fa-file"></i>
+                  </div>
+                  <div class="file2">
+                    <input type="time" placeholder="09-9-2009" />
+                  </div>
+                  <div class="file2">
+                    <input type="text" placeholder="  " />
+                  </div>
+                </div>
+                <!-- ================== -->
+                <i class="trash fa-solid fa-trash"></i>
+              </div>
+            </div>
+          </div>
+          <div id="tab4" class="content">
+            <div class="task-5">
+              <div class="task-6">
+                <div class="ts3">
+                  <img src="./p.jpg" alt="" class="img" />
+                  <span>ope</span>
+                  <span>4:57am</span>
+                </div>
+                <div class="mess">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Iure et vitae incidunt laudantium dolores asperiores omnis
+                    autem dicta id nesciunt.Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Reiciendis, sed!
+                  </p>
+                </div>
+              </div>
+              <!-- ======================= -->
+              <div class="task-6">
+                <div class="ts3">
+                  <img src="./p.jpg" alt="" class="img" />
+                  <span>me</span>
+                  <span>4:57am</span>
+                </div>
+                <div class="mess">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit architecto enim velit totam similique porro atque
+                    officiis, pariatur minus aut. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Reiciendis, sed!
+                  </p>
+                </div>
+              </div>
+              <!-- ======================= -->
+              <div class="task-6">
+                <div class="ts3">
+                  <img src="./p.jpg" alt="" class="img" />
+                  <span>ope</span>
+                  <span>4:57am</span>
+                </div>
+                <div class="mess">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus quibusdam obcaecati temporibus est
+                    exercitationem voluptate facilis quas, harum suscipit at?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Reiciendis, sed!
+                  </p>
+                </div>
+              </div>
+              <!-- ======================= -->
+              <div class="typing">
+                <input type="text" placeholder="type something" />
+                <span>
+                  <i class="fa-solid fa-message"></i>
+                  <i class="fa-solid fa-microphone"></i>
+                  <i class="right fa-solid fa-square-up-right"></i>
+                </span>
+              </div>
+              <!-- ============== -->
+            </div>
+          </div>
+        </div>
+        <!-- =================================== -->
+      </section>
+      <!-- end of section-1 -->
+      <!-- section-2 -->
+      <section class="section-2" style="height: 100%">
+        <!-- cal -->
+        <div id="calendar-container">
+          <div id="calendar-header">
+            <button class="arrow-button" onclick="previousMonth()">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div id="month-year-display">
+              <select id="month-selector" onchange="changeMonth()">
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+              </select>
+              <span id="current-year">2024</span>
+              <button class="arrow-button" onclick="nextYear()">&#9655;</button>
+            </div>
+            <button class="arrow-button" onclick="nextMonth()">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div id="calendar-body"></div>
+        </div>
+
+        <!-- ======= -->
+        <div class="months">
+          <div class="line1">
+            <ul class="sec2-tabs">
+              <li class="sec2-tab" onclick="changeSecTab('sec2-tab1')">
+                week
                 <div class="highlight-line"></div>
               </li>
-              <li class="tab" onclick="changeTab('tab2')">
-                checlist
+              <li class="sec2-tab" onclick="changeSecTab('sec2-tab2')">
+                month
                 <div class="highlight-line"></div>
               </li>
-              <li class="tab" onclick="changeTab('tab3')">
-                files
-                <div class="highlight-line"></div>
-              </li>
-              <li class="tab" onclick="changeTab('tab4')">
-  messages
-  <div class="highlight-line"></div>
-</li>
             </ul>
-            <!-- tab content -->
-<div id="tab1" class="content active">
-    <form id="task-form">
-    <div class="task-2">
-    <label for="auto-task">job type</label><br>
-    <select id="job-type" name="job-type">
-    <option value="kitchen-countertop">Kitchen Countertop</option>
- </select>
-    </div>
-    <!-- ===================== -->
- <div class="task-2">
-    <label for="auto-task">department</label><br>
-    <select id="job-type" name="job-type">
-    <option value="templating">templating</option>
- </select>
-    </div>
-    <!-- =================== -->
-<div class="task-2">
-   <label for="auto-task">task name</label><br>
-   <select id="job-type" name="job-type">
-   <option value="buy something">buy something</option>
-   <option value="lorem ipsum">lorem ipsum</option>
-   <option value="lorem ipsum">lorem ipsum</option>
-   <option value="lorem ipsum">lorem ipsum</option>
-   <option value="lorem ipsum">lorem ipsum</option>
-</select>
-   </div>
-   <!-- ============================= -->
-   <div class="task-2">
-   <label for="auto-task">users</label><br>
-   <select id="job-type" name="job-type">
-   <option value="buy something">martis</option>
-</select>
-   </div>
-   <!-- =================== -->
-<div class="task-2">
-   <label for="auto-task">status</label><br>
-   <select id="job-type" name="job-type">
-   <option value="buy something">aproved</option>
-   </select>
-</div>
-<!-- =========================== -->
-<div class="task-2">
-   <label for="auto-task">duration</label><br>
-   <input type="time" id="duration" name="time" placeholder="2hrs">
-</div>
-<!-- ======================== -->
-<div class="task-2">
-   <label for="auto-task">start date</label><br>
-   <input type="date" id="duration" name="time" placeholder="09-9-2009">
-</div>
-<!-- ====================== -->
-<div class="task-2">
-   <label for="auto-task">start hour</label><br>
-   <div class="input" style="display: flex; gap: 5px;"><input style="width: 50%;display: inline;" type="date" id="duration" name="time" placeholder="09-9-2009">
-   <input style="width: 50%;display: inline;" type="date" id="duration" name="time" placeholder="09-9-2009">
-</div>
-</div>
-<!-- ====================== -->
-<div class="task-2">
-   <label for="auto-task">location</label><br>
-   <input type="text" id="duration" name="time" placeholder="lorem ipsum">
-</div>
-<!-- ==================== -->
-<div class="task-2">
-   <label for="auto-task">adress project</label><br>
-   <input type="text" id="duration" name="time" placeholder="lorem ipsum">
-</div>
-<!-- =================================== -->
- <div class="task-2">
-    <label for="auto-task">department</label><br>
-    <select id="job-type" name="job-type">
-    <option value="templating">templating</option>
- </select>
-    </div>
-    <!-- =========================== -->
-    <div class="task-2">
-   <label for="auto-task">notes</label><br>
-   <input type="text" id="duration" name="time" placeholder="lorem ipsum">
-</div>
-    </form>
-    <!-- ============================ -->
-    <!-- end -->
-    <!-- button -->
-    <div class="task-btns">
-        <button class="btn1">cancel</button>
-        <button class="btn2">save</button>
-    </div>
-</div>
-            <!-- tab-1  end -->
-            <div id="tab2" class="content">
-              <div class="task-3">
-                <div class="task-4">
-                    <div class="ts">
-                        <span>create something</span>
-                        <div class="ts1"></div>
-                    </div>
-                    <i class="trash fa fa-trash" aria-hidden="true"></i>
+            <div class="line2">
+              <div class="cal">
+                <button class="show-cal" onclick="toggleCalendar()">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <input type="month" class="mon" />
+              </div>
+              <div class="date">
+                <i class="fas fa-chevron-down"></i>
+                <input type="week" />
+              </div>
+            </div>
+          </div>
+          <!-- =========================== -->
+          <div id="sec2-tab1" class="tab-content tab-active">
+            <div class="dates">
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+            </div>
+            <!-- ================= -->
+            <div class="line3">
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-solid fa-stopwatch"></i>
+                  <span>12s</span>
                 </div>
-                <!-- ==================== -->
-                                <div class="task-4">
-                    <div class="ts">
-                        <span>create something</span>
-                        <div class="ts1"></div>
-                    </div>
-                    <i class="trash fa fa-trash" aria-hidden="true"></i>
+                <div class="icon">
+                  <i class="fa-solid fa-list-ul"></i>
+                  <span>1</span>
                 </div>
-                <!-- ============================= -->
-                                <div class="task-4">
-                    <div class="ts">
-                        <span>create something</span>
-                        <div class="ts1"></div>
-                    </div>
-                    <i class="trash fa fa-trash" aria-hidden="true"></i>
-                </div>
-                <!-- ==================== -->
-            <div class="task-4">
-                    <div class="ts">
-                        <span>create something</span>
-                        <div class="ts1"></div>
-                    </div>
-                    <i class="trash fa fa-trash" aria-hidden="true"></i>
+                <div class="icon">
+                  <i class="fa-solid fa-user"></i>
+                  <span>3</span>
                 </div>
               </div>
-              <div class="plus">
-                +
+              <!-- ============================= -->
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-solid fa-stopwatch"></i>
+                  <span>12s</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-list-ul"></i>
+                  <span>1</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-user"></i>
+                  <span>3</span>
+                </div>
               </div>
-    <div class="task-btns">
-        <button class="btn1">cancel</button>
-        <button class="btn2">save</button>
-    </div>
-            </div>
-            <!-- end of tab2 -->
-            <div id="tab3" class="content">
-          <div class="files">
-                <div class="file">
-                    <div class="file1">
-                        <div class="pdf">
-                            <div class="pd">
-                            <i class="fa-regular fa-file-pdf"></i>
-                            <p>fixed</p>
-                            </div>
-                        <i class="fa-regular fa-file"></i>
-                        </div>
-<div class="file2">
-    <input type="time" placeholder="09-9-2009">
-</div>
-<div class="file2">
-    <input type="text" placeholder="  ">
-</div>
-                    </div>
-                    <i class="trash fa-solid fa-trash"></i>
+              <!-- ======================= -->
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-solid fa-stopwatch"></i>
+                  <span>12s</span>
                 </div>
-                <!-- ====================== -->
-                    <div class="file">
-        <div class="file1">
-            <div class="pdf">
-                <div class="pd">
-                <i class="fa-regular fa-file-pdf"></i>
-                <p>fixed</p>
-            </div>
-            <i class="fa-regular fa-file"></i>
-            </div>
-<div class="file2">
-    <input type="time" placeholder="09-9-2009">
-</div>
-<div class="file2">
-    <input type="text" placeholder="  ">
-</div>
-        </div>
-        <i class="trash fa-solid fa-trash"></i>
-    </div>
-    <!-- ================================ -->
-        <div class="file">
-        <div class="file1">
-            <div class="pdf">
-                <div class="pd">
-                <i class="fa-regular fa-file-pdf"></i>
-                <p>fixed</p>
+                <div class="icon">
+                  <i class="fa-solid fa-list-ul"></i>
+                  <span>1</span>
                 </div>
-              <i class="fa-regular fa-file"></i>
-            </div>
-<div class="file2">
-    <input type="time" placeholder="09-9-2009">
-</div>
-<div class="file2">
-    <input type="text" placeholder="  ">
-</div>
-        </div>
-        <!-- ================== -->
-        <i class="trash fa-solid fa-trash"></i>
-    </div>
+                <div class="icon">
+                  <i class="fa-solid fa-user"></i>
+                  <span>3</span>
+                </div>
               </div>
-
-            </div>
-            <div id="tab4" class="content">
-<div class="task-5">
-    <div class="task-6">
-<div class="ts3">
-     <img src="./p.jpg" alt="" class="img">
-       <span>ope</span>
-       <span>4:57am</span>
-</div>
-  <div class="mess">
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure et vitae incidunt laudantium dolores asperiores omnis autem dicta id nesciunt.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, sed!</p>
-  </div>
-    </div>
-    <!-- ======================= -->
-        <div class="task-6">
-            <div class="ts3">
-     <img src="./p.jpg" alt="" class="img">
-       <span>me</span>
-       <span>4:57am</span>
-       </div>
-  <div class="mess">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit architecto enim velit totam similique porro atque officiis, pariatur minus aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, sed!</p>
-  </div>
-    </div>
-    <!-- ======================= -->
-<div class="task-6">
-    <div class="ts3">
-     <img src="./p.jpg" alt="" class="img">
-       <span>ope</span>
-       <span>4:57am</span>
-    </div>
-  <div class="mess">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quibusdam obcaecati temporibus est exercitationem voluptate facilis quas, harum suscipit at? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, sed!</p>
-  </div>
-</div>
-<!-- ======================= -->
-    <div class="typing">
-    <input type="text" placeholder="type something">
-    <span>
-        <i class="fa-solid fa-message"></i>
-        <i class="fa-solid fa-microphone"></i>
-        <i class="right fa-solid fa-square-up-right"></i>
-    </span>
-</div>
-<!-- ============== -->
-</div>
-</div>
-    </div>
-          <!-- =================================== -->
-        </section>
-        <!-- end of section-1 -->
-        <!-- section-2 -->
-        <section class="section-2" style="height: 100%;">
-            <!-- cal -->
-<div id="calendar-container">
-
-  <div id="calendar-header">
-    <button class="arrow-button" onclick="previousMonth()"><i class="fas fa-chevron-left"></i></button>
-    <div id="month-year-display">
-      <select id="month-selector" onchange="changeMonth()">
-        <option value="0">January</option>
-        <option value="1">February</option>
-        <option value="2">March</option>
-        <option value="3">April</option>
-        <option value="4">May</option>
-        <option value="5">June</option>
-        <option value="6">July</option>
-        <option value="7">August</option>
-        <option value="8">September</option>
-        <option value="9">October</option>
-        <option value="10">November</option>
-        <option value="11">December</option>
-      </select>
-      <span id="current-year">2024</span>
-      <button class="arrow-button" onclick="nextYear()">&#9655;</button>
-    </div>
-    <button class="arrow-button" onclick="nextMonth()"><i class="fas fa-chevron-right"></i></button>
-  </div>
-  <div id="calendar-body"></div>
-</div>
-
-            <!-- ======= -->
-            <div class="months">
-                <div class="line1">
-<ul class="sec2-tabs">
-  <li class="sec2-tab" onclick="changeSecTab('sec2-tab1')">
-    week
-    <div class="highlight-line"></div>
-  </li>
-   <li class="sec2-tab" onclick="changeSecTab('sec2-tab2')">
-   month
-   <div class="highlight-line"></div>
- </li>
-  </ul>
-                <div class="line2">
-                    <div class="cal">
-                     <button class="show-cal" onclick="toggleCalendar()"><i class="fas fa-chevron-down"></i></button>
-                    <span class="mon">August</span>
-                    </div>
-                        <div class="date">
-                            <i class="fas fa-chevron-down"></i>
-                            <!-- <input type="date" placeholder="09-9-2009"> -->
-                            <span>08-08 / 14-08</span>
-                        </div>
+              <!-- ================= -->
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-solid fa-stopwatch"></i>
+                  <span>12s</span>
                 </div>
+                <div class="icon">
+                  <i class="fa-solid fa-list-ul"></i>
+                  <span>1</span>
                 </div>
-                <!-- =========================== -->
-               <div id="sec2-tab1" class="tab-content tab-active">
-                <div class="dates">
-                    <div class="day">
-                        <p>Mon.08-08</p>
-                    </div>
-                    <div class="day">
-                        <p>tue.09-08</p>
-                    </div>
-                                        <div class="day">
-                        <p>wed.10-08</p>
-                    </div>
-                                        <div class="day">
-                        <p>thu.11-08</p>
-                    </div>
-                                        <div class="day">
-                        <p>fri.12-08</p>
-                    </div>
-                                        <div class="day">
-                        <p>sat.13-08</p>
-                    </div>
-                                        <div class="day">
-                        <p>sun.14-08</p>
-                    </div>
+                <div class="icon">
+                  <i class="fa-solid fa-user"></i>
+                  <span>3</span>
                 </div>
-                <!-- ================= -->
-                <div class="line3">
-                    <div class="icons">
-                        <div class="icon">
-                            <i class="fa-solid fa-stopwatch"></i>
-                            <span>12s</span>
-                        </div>
-            <div class="icon">
-             <i class="fa-solid fa-list-ul"></i>
-           <span>1</span>
-           </div>
-         <div class="icon">
-            <i class="fa-solid fa-user"></i>
-           <span>3</span>
-           </div>
-                    </div>
-                    <!-- ============================= -->
-                                        <div class="icons">
-                        <div class="icon">
-                            <i class="fa-solid fa-stopwatch"></i>
-                            <span>12s</span>
-                        </div>
-            <div class="icon">
-             <i class="fa-solid fa-list-ul"></i>
-           <span>1</span>
-           </div>
-         <div class="icon">
-            <i class="fa-solid fa-user"></i>
-           <span>3</span>
-           </div>
-                    </div>
-                    <!-- ======================= -->
-                                        <div class="icons">
-                        <div class="icon">
-                            <i class="fa-solid fa-stopwatch"></i>
-                            <span>12s</span>
-                        </div>
-            <div class="icon">
-             <i class="fa-solid fa-list-ul"></i>
-           <span>1</span>
-           </div>
-         <div class="icon">
-            <i class="fa-solid fa-user"></i>
-           <span>3</span>
-           </div>
-                    </div>
-                    <!-- ================= -->
-                                        <div class="icons">
-                        <div class="icon">
-                            <i class="fa-solid fa-stopwatch"></i>
-                            <span>12s</span>
-                        </div>
-            <div class="icon">
-             <i class="fa-solid fa-list-ul"></i>
-           <span>1</span>
-           </div>
-         <div class="icon">
-            <i class="fa-solid fa-user"></i>
-           <span>3</span>
-           </div>
-                    </div>
-                    <!-- ================ -->
-                                        <div class="icons">
-                        <div class="icon">
-                            <i class="fa-solid fa-stopwatch"></i>
-                            <span>12s</span>
-                        </div>
-            <div class="icon">
-             <i class="fa-solid fa-list-ul"></i>
-           <span>1</span>
-           </div>
-         <div class="icon">
-            <i class="fa-solid fa-user"></i>
-           <span>3</span>
-           </div>
-                    </div>
-                    <!-- ============== -->
-                                        <div class="icons">
-                        <div class="icon">
-                            <i class="fa-solid fa-stopwatch"></i>
-                            <span>12s</span>
-                        </div>
-            <div class="icon">
-             <i class="fa-solid fa-list-ul"></i>
-           <span>1</span>
-           </div>
-         <div class="icon">
-            <i class="fa-solid fa-user"></i>
-           <span>3</span>
-           </div>
-                    </div>
-                    <!-- ================ -->
-                                        <div class="icons">
-                        <div class="icon">
-                            <i class="fa-solid fa-stopwatch"></i>
-                            <span>12s</span>
-                        </div>
-            <div class="icon">
-             <i class="fa-solid fa-list-ul"></i>
-           <span>1</span>
-           </div>
-         <div class="icon">
-            <i class="fa-solid fa-user"></i>
-           <span>3</span>
-           </div>
-                    </div>
+              </div>
+              <!-- ================ -->
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-solid fa-stopwatch"></i>
+                  <span>12s</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-list-ul"></i>
+                  <span>1</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-user"></i>
+                  <span>3</span>
+                </div>
+              </div>
+              <!-- ============== -->
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-solid fa-stopwatch"></i>
+                  <span>12s</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-list-ul"></i>
+                  <span>1</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-user"></i>
+                  <span>3</span>
+                </div>
+              </div>
+              <!-- ================ -->
+              <div class="icons">
+                <div class="icon">
+                  <i class="fa-solid fa-stopwatch"></i>
+                  <span>12s</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-list-ul"></i>
+                  <span>1</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-user"></i>
+                  <span>3</span>
+                </div>
+              </div>
             </div>
             <!-- =================== -->
             <div class="line4">
-                <div class="card">
+              <div class="card">
                 <div class="profile">
-                    <div class="blue">
-                        <span>templating</span>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                    <div class="green">
-                        <div class="dot">
-                          <i class="fa-solid fa-stopwatch"></i>
-                          <span>08:12</span>  
-                        </div>
-                        <div class="grn-dot"></div>
-                    </div>
-                    <div class="text">
-                        <i class="fa-solid fa-id-card"></i>
-                        <span>ID</span>
-                    </div>
-                    <div class="text">
-                   <i class="fa-solid fa-address-book"></i>
-                        <span>connections</span>
-                    </div>
-                    <div class="text">
-                     <i class="fa-solid fa-phone"></i>
-                        <span>contact</span>
-                    </div>
-                <div class="text">
-                     <i class="fa-solid fa-phone"></i>
-                    <span>contact</span>
-                </div>
-                    <div class="text">
-                <i class="fa-solid fa-lightbulb"></i>
-        <span>contact</span>
-    </div>
-            <div class="text">
-                <i class="fa-solid fa-fax"></i>
-                <span>contact</span>
-            </div>
-            <div class="images">
-                <img src="./p.jpg" alt="" class="img1" />
-                <img src="./p.jpg" alt="" class="img1" />
-                <img src="./p.jpg" alt="" class="img1" />
-            </div>
-                </div>
-                </div>
-                <!-- ====================== -->
-                                <div class="card"></div>
-                                <!-- =================== -->
-                                <div class="card">
-                 <div class="profile">
-                    <div class="blue">
-                        <span>templating</span>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                    <div class="green">
-                        <div class="dot">
-                          <i class="fa-solid fa-stopwatch"></i>
-                          <span>08:12</span>  
-                        </div>
-                        <div class="grn-dot"></div>
-                    </div>
-                    <div class="text">
-                        <i class="fa-solid fa-id-card"></i>
-                        <span>ID</span>
-                    </div>
-                    <div class="text">
-                   <i class="fa-solid fa-address-book"></i>
-                        <span>connections</span>
-                    </div>
-                    <div class="text">
-                     <i class="fa-solid fa-phone"></i>
-                        <span>contact</span>
-                    </div>
-                <div class="text">
-                     <i class="fa-solid fa-phone"></i>
-                    <span>contact</span>
-                </div>
-                    <div class="text">
-                <i class="fa-solid fa-lightbulb"></i>
-        <span>contact</span>
-    </div>
-            <div class="text">
-                <i class="fa-solid fa-fax"></i>
-                <span>contact</span>
-            </div>
-            <div class="images">
-                <img src="./p.jpg" alt="" class="img1" />
-                <img src="./p.jpg" alt="" class="img1" />
-                <img src="./p.jpg" alt="" class="img1" />
-            </div>
-                </div>
-                </div>
-                <!-- ==================================== -->
-                                <div class="card"></div>    
-                <!-- ======================================== -->
-                                <div class="card">
-                </div>
-                <!-- ========================= -->
-                <div class=" card">
-                </div>
-                   <!-- ============ -->
-                    <div class="card">
-                </div>
-                <!-- ============================== -->
-                                <div class="card"></div>
-                                <!-- ========================= -->
-                                <div class="card">
-             <div class="profile">
-                   <div class="pink">
-                       <span>packing</span>
-                       <i class="fa-solid fa-ellipsis-vertical"></i>
-                   </div>
-                   <div class="green">
-                       <div class="dot">
-                         <i class="fa-solid fa-stopwatch"></i>
-                         <span>08:12</span>  
-                       </div>
-                       <div class="grn-dot"></div>
-                   </div>
-                   <div class="text">
-                       <i class="fa-solid fa-id-card"></i>
-                       <span>ID 2022-12981</span>
-                   </div>
-                   <div class="text">
-                  <i class="fa-solid fa-address-book"></i>
-                       <span>connections</span>
-                   </div>
-                   <div class="text">
-                    <i class="fa-solid fa-phone"></i>
-                <span>pualo machado</span>
-                   </div>
-               <div class="text">
-                    <i class="fa-solid fa-phone"></i>
-                   <span>new york,8901</span>
-               </div>
-                   <div class="text">
-               <i class="fa-solid fa-lightbulb"></i>
-       <span>kitchen</span>
-   </div>
-           <div class="text">
-               <i class="fa-solid fa-fax"></i>
-               <span>machine 2</span>
-           </div>
-           <div class="images">
-               <img src="./p.jpg" alt="" class="img1" />
-               <img src="./p.jpg" alt="" class="img1" />
-               <img src="./p.jpg" alt="" class="img1" />
-           </div>
-               </div>  
-               </div>
-           <!--  =====================-->
-           <div class="card"></div>
-           <!-- ==================== -->
-           <div class="card"></div>
-           <div class="card">
-            <div class="profile ">
-                  <div class="pink">
-                      <span>packing</span>
-                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <div class="blue">
+                    <span>templating</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
                   </div>
                   <div class="green">
-                      <div class="dot">
-                        <i class="fa-solid fa-stopwatch"></i>
-                        <span>08:12</span>  
-                      </div>
-                      <div class="grn-dot"></div>
+                    <div class="dot">
+                      <i class="fa-solid fa-stopwatch"></i>
+                      <span>08:12</span>
+                    </div>
+                    <div class="grn-dot"></div>
                   </div>
                   <div class="text">
-                      <i class="fa-solid fa-id-card"></i>
-                      <span>ID</span>
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>ID</span>
                   </div>
                   <div class="text">
-                 <i class="fa-solid fa-address-book"></i>
-                      <span>connections</span>
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>connections</span>
                   </div>
                   <div class="text">
-                   <i class="fa-solid fa-phone"></i>
-                      <span>contact</span>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>contact</span>
                   </div>
-              <div class="text">
-                   <i class="fa-solid fa-phone"></i>
-                  <span>contact</span>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-fax"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="images">
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                  </div>
+                </div>
               </div>
+              <!-- ====================== -->
+              <div class="card"></div>
+              <!-- =================== -->
+              <div class="card">
+                <div class="profile">
+                  <div class="blue">
+                    <span>templating</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="green">
+                    <div class="dot">
+                      <i class="fa-solid fa-stopwatch"></i>
+                      <span>08:12</span>
+                    </div>
+                    <div class="grn-dot"></div>
+                  </div>
                   <div class="text">
-              <i class="fa-solid fa-lightbulb"></i>
-      <span>contact</span>
-  </div>
-          <div class="text">
-              <i class="fa-solid fa-fax"></i>
-              <span>contact</span>
-          </div>
-          <div class="images">
-              <img src="./p.jpg" alt="" class="img1" />
-              <img src="./p.jpg" alt="" class="img1" />
-              <img src="./p.jpg" alt="" class="img1" />
-          </div>
-              </div> 
-              </div> 
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>ID</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>connections</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-fax"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="images">
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                  </div>
+                </div>
+              </div>
+              <!-- ==================================== -->
+              <div class="card"></div>
+              <!-- ======================================== -->
+              <div class="card"></div>
+              <!-- ========================= -->
+              <div class="card"></div>
+              <!-- ============ -->
+              <div class="card"></div>
+              <!-- ============================== -->
+              <div class="card"></div>
+              <!-- ========================= -->
+              <div class="card">
+                <div class="profile">
+                  <div class="pink">
+                    <span>packing</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="green">
+                    <div class="dot">
+                      <i class="fa-solid fa-stopwatch"></i>
+                      <span>08:12</span>
+                    </div>
+                    <div class="grn-dot"></div>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>ID 2022-12981</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>connections</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>pualo machado</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>new york,8901</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>kitchen</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-fax"></i>
+                    <span>machine 2</span>
+                  </div>
+                  <div class="images">
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                  </div>
+                </div>
+              </div>
+              <!--  =====================-->
+              <div class="card"></div>
+              <!-- ==================== -->
+              <div class="card"></div>
+              <div class="card">
+                <div class="profile">
+                  <div class="pink">
+                    <span>packing</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="green">
+                    <div class="dot">
+                      <i class="fa-solid fa-stopwatch"></i>
+                      <span>08:12</span>
+                    </div>
+                    <div class="grn-dot"></div>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>ID</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>connections</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-fax"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="images">
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                  </div>
+                </div>
+              </div>
               <!-- ======================= -->
               <div class="card"></div>
               <div class="card"></div>
               <!-- ================================== -->
               <div class="card">
-                               <div class="profile">
-                    <div class="blue">
-                        <span>templating</span>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="profile">
+                  <div class="blue">
+                    <span>templating</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="green">
+                    <div class="dot">
+                      <i class="fa-solid fa-stopwatch"></i>
+                      <span>08:12</span>
                     </div>
-                    <div class="green">
-                        <div class="dot">
-                          <i class="fa-solid fa-stopwatch"></i>
-                          <span>08:12</span>  
-                        </div>
-                        <div class="grn-dot"></div>
-                    </div>
-                    <div class="text">
-                        <i class="fa-solid fa-id-card"></i>
-                        <span>ID</span>
-                    </div>
-                    <div class="text">
-                   <i class="fa-solid fa-address-book"></i>
-                        <span>connections</span>
-                    </div>
-                    <div class="text">
-                     <i class="fa-solid fa-phone"></i>
-                        <span>contact</span>
-                    </div>
-                <div class="text">
-                     <i class="fa-solid fa-phone"></i>
+                    <div class="grn-dot"></div>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>ID</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>connections</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
                     <span>contact</span>
-                </div>
-                    <div class="text">
-                <i class="fa-solid fa-lightbulb"></i>
-        <span>contact</span>
-    </div>
-            <div class="text">
-                <i class="fa-solid fa-fax"></i>
-                <span>contact</span>
-            </div>
-            <div class="images">
-                <img src="./p.jpg" alt="" class="img1" />
-                <img src="./p.jpg" alt="" class="img1" />
-                <img src="./p.jpg" alt="" class="img1" />
-            </div>
-                </div>
-                </div>
-                <!-- =================== -->
-                <div class="card"></div>
-                <!-- ================== -->
-                <div class="card">
-                                 <div class="profile">
-                    <div class="blue">
-                        <span>templating</span>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                    <div class="green">
-                        <div class="dot">
-                          <i class="fa-solid fa-stopwatch"></i>
-                          <span>08:12</span>  
-                        </div>
-                        <div class="grn-dot"></div>
-                    </div>
-                    <div class="text">
-                        <i class="fa-solid fa-id-card"></i>
-                        <span>ID</span>
-                    </div>
-                    <div class="text">
-                   <i class="fa-solid fa-address-book"></i>
-                        <span>connections</span>
-                    </div>
-                    <div class="text">
-                     <i class="fa-solid fa-phone"></i>
-                        <span>contact</span>
-                    </div>
-                <div class="text">
-                     <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
                     <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-fax"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="images">
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                  </div>
                 </div>
-                    <div class="text">
-                <i class="fa-solid fa-lightbulb"></i>
-        <span>contact</span>
-    </div>
-            <div class="text">
-                <i class="fa-solid fa-fax"></i>
-                <span>contact</span>
+              </div>
+              <!-- =================== -->
+              <div class="card"></div>
+              <!-- ================== -->
+              <div class="card">
+                <div class="profile">
+                  <div class="blue">
+                    <span>templating</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="green">
+                    <div class="dot">
+                      <i class="fa-solid fa-stopwatch"></i>
+                      <span>08:12</span>
+                    </div>
+                    <div class="grn-dot"></div>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>ID</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>connections</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-fax"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="images">
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                  </div>
+                </div>
+              </div>
+              <!-- ==================== -->
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <!-- ========================= -->
+              <div class="card"></div>
+              <!-- ====================== -->
+              <div class="card">
+                <div class="profile">
+                  <div class="pink">
+                    <span>packing</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="green">
+                    <div class="dot">
+                      <i class="fa-solid fa-stopwatch"></i>
+                      <span>08:12</span>
+                    </div>
+                    <div class="grn-dot"></div>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>ID</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>connections</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-fax"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="images">
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                  </div>
+                </div>
+              </div>
+              <!-- ========================== -->
+              <div class="card"></div>
+              <!-- ============================ -->
+              <div class="card"></div>
+              <!-- ============ -->
+              <div class="card">
+                <div class="profile">
+                  <div class="pink">
+                    <span>packing</span>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="green">
+                    <div class="dot">
+                      <i class="fa-solid fa-stopwatch"></i>
+                      <span>08:12</span>
+                    </div>
+                    <div class="grn-dot"></div>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>ID</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>connections</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="text">
+                    <i class="fa-solid fa-fax"></i>
+                    <span>contact</span>
+                  </div>
+                  <div class="images">
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                    <img src="./p.jpg" alt="" class="img1" />
+                  </div>
+                </div>
+              </div>
+              <!-- ================= -->
+              <div class="card"></div>
+              <div class="card"></div>
             </div>
-            <div class="images">
-                <img src="./p.jpg" alt="" class="img1" />
-                <img src="./p.jpg" alt="" class="img1" />
-                <img src="./p.jpg" alt="" class="img1" />
+          </div>
+          <!-- end of section-2 tab-centent -->
+          <!-- section-2 tab2 content -->
+          <div id="sec2-tab2" class="tab-content">
+            <div class="dates">
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
+              <div class="day">
+                <input type="week" name="" id="" aria-placeholder="Mon.08-08" />
+              </div>
             </div>
-                </div>
-                </div>
-                <!-- ==================== -->
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <!-- ========================= -->
-                <div class="card"></div>
-                <!-- ====================== -->
-                <div class="card">
-                           <div class="profile">
-                 <div class="pink">
-                     <span>packing</span>
-                     <i class="fa-solid fa-ellipsis-vertical"></i>
-                 </div>
-                 <div class="green">
-                     <div class="dot">
-                       <i class="fa-solid fa-stopwatch"></i>
-                       <span>08:12</span>  
-                     </div>
-                     <div class="grn-dot"></div>
-                 </div>
-                 <div class="text">
-                     <i class="fa-solid fa-id-card"></i>
-                     <span>ID</span>
-                 </div>
-                 <div class="text">
-                <i class="fa-solid fa-address-book"></i>
-                     <span>connections</span>
-                 </div>
-                 <div class="text">
-                  <i class="fa-solid fa-phone"></i>
-                     <span>contact</span>
-                 </div>
-             <div class="text">
-                  <i class="fa-solid fa-phone"></i>
-                 <span>contact</span>
-             </div>
-                 <div class="text">
-             <i class="fa-solid fa-lightbulb"></i>
-     <span>contact</span>
- </div>
-         <div class="text">
-             <i class="fa-solid fa-fax"></i>
-             <span>contact</span>
-         </div>
-         <div class="images">
-             <img src="./p.jpg" alt="" class="img1" />
-             <img src="./p.jpg" alt="" class="img1" />
-             <img src="./p.jpg" alt="" class="img1" />
-         </div>
-             </div>  
-             </div>
-             <!-- ========================== -->
-             <div class="card"></div>
-             <!-- ============================ -->
-             <div class="card"></div>
-             <!-- ============ -->
-             <div class="card">
-                        <div class="profile">
-                 <div class="pink">
-                     <span>packing</span>
-                     <i class="fa-solid fa-ellipsis-vertical"></i>
-                 </div>
-                 <div class="green">
-                     <div class="dot">
-                       <i class="fa-solid fa-stopwatch"></i>
-                       <span>08:12</span>  
-                     </div>
-                     <div class="grn-dot"></div>
-                 </div>
-                 <div class="text">
-                     <i class="fa-solid fa-id-card"></i>
-                     <span>ID</span>
-                 </div>
-                 <div class="text">
-                <i class="fa-solid fa-address-book"></i>
-                     <span>connections</span>
-                 </div>
-                 <div class="text">
-                  <i class="fa-solid fa-phone"></i>
-                     <span>contact</span>
-                 </div>
-             <div class="text">
-                  <i class="fa-solid fa-phone"></i>
-                 <span>contact</span>
-             </div>
-                 <div class="text">
-             <i class="fa-solid fa-lightbulb"></i>
-     <span>contact</span>
- </div>
-         <div class="text">
-             <i class="fa-solid fa-fax"></i>
-             <span>contact</span>
-         </div>
-         <div class="images">
-             <img src="./p.jpg" alt="" class="img1" />
-             <img src="./p.jpg" alt="" class="img1" />
-             <img src="./p.jpg" alt="" class="img1" />
-         </div>
-             </div>  
-             </div>
-             <!-- ================= -->
-             <div class="card"></div>
-             <div class="card"></div>
-             </div>
-               </div>
-             <!-- end of section-2 tab-centent -->
-             <!-- section-2 tab2 content -->
-        <div id="sec2-tab2" class="tab-content">
-                <div class="dates">
-                    <div class="day">
-                        <p>Mon</p>
-                    </div>
-                    <div class="day">
-                        <p>tue</p>
-                    </div>
-                    <div class="day">
-                        <p>wed</p>
-                    </div>
-                <div class="day">
-                        <p>thu</p>
-                    </div>
-                <div class="day">
-                        <p>fri</p>
-                    </div>
-                    <div class="day">
-                        <p>sat</p>
-                    </div>
-                    <div class="day">
-                        <p>sun</p>
-                    </div>
-                </div>
-                <!-- =================== -->
+            <!-- =================== -->
             <div class="line4">
-                <div class="profile">
-                    <span>1</span>
-                    <div class="orange">
-                        <span>scanner</span>
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                    </div>
-                </div> 
-                <div class="profile">
-                    <span>2</span>
-                </div>    
-                <div class="profile">
-                    <span>3</span>
-                </div>    
-                <div class="profile">
-        <span>4</span>
-        <div class="pin">
-            <span>packing</span>
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-        </div>
-    </div> 
-        <!-- ========== -->
-                <div class="profile">
-                    <span>5</span>
-                </div>    
-                <div class="profile"><span>6</span></div>
-                    <!-- ======= -->
-                <div class="profile">
-                    <span>7</span>
-            <div class="blu">
-            <span>templating</span>
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-        </div>
-                </div>    
-                <div class="profile"><span>8</span></div>    
-                <div class="profile"><span>9</span></div>    
-                <div class="profile"><span>10</span></div>    
-                <div class="profile">
-                    <span>11</span>
-                            <div class="pin">
-            <span>fabrication</span>
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-        </div>
-                </div>    
-                <div class="profile"><span>12</span></div>    
-                <div class="profile"><span>13</span></div>    
-                <div class="profile">
-                    <span>14</span>
-                            <div class="gr">
-            <span>cutting</span>
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-        </div>
-                </div>    
-                <div class="profile"><span>15</span></div>    
-                <div class="profile">
-                    <span>16</span>
-        <div class="orange">
-            <span>scanner</span>
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-        </div>
-                </div>    
-                <div class="profile"><span>17</span></div>    
-                <div class="profile"><span>18</span></div>    
-                <div class="profile">
-                    <span>19</span>
-                        <div class="sky">
-            <span>transport</span>
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-        </div>
-                </div>    
-                <div class="profile"><span>20</span></div>    
-                <div class="profile"><span>21</span></div>    
-                <div class="profile"><span>22</span></div>    
-                <div class="profile">
-                    <span>23</span>
-                        <div class="pin">
-            <span>packing</span>
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-        </div>
-                </div>    
-                <div class="profile"><span>24</span></div>    
-                <div class="profile"><span>25</span></div>    
-                <div class="profile"><span>26</span></div>    
-                <div class="profile"><span>27</span></div>    
-                <div class="profile">
-                    <span>28</span>
-                        <div class="yel">
-            <span>installation</span>
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-        </div>
-                </div> 
-                <div class="profile"><span>29</span>
-                <div class="combine">
-                    <div class="p">
-                        <span>packing</span>
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                    </div>
-                     <div class="o">
-     <span>scanner</span>
-     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
- </div>
+              <div class="profile">
+                <span>1</span>
+                <div class="orange">
+                  <span>scanner</span>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                 </div>
-                </div>    
-                <div class="profile"><span>30</span></div>    
-                <div class="profile"><span>31</span></div>    
-                <div class="profile"><span>32</span></div>    
-                <div class="profile"><span>33</span></div>    
-                <div class="profile"><span>34</span></div>    
-                <div class="profile"><span>35</span></div>    
-            <!-- =========================== -->
+              </div>
+              <div class="profile">
+                <span>2</span>
+              </div>
+              <div class="profile">
+                <span>3</span>
+              </div>
+              <div class="profile">
+                <span>4</span>
+                <div class="pin">
+                  <span>packing</span>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- ========== -->
+              <div class="profile">
+                <span>5</span>
+              </div>
+              <div class="profile"><span>6</span></div>
+              <!-- ======= -->
+              <div class="profile">
+                <span>7</span>
+                <div class="blu">
+                  <span>templating</span>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="profile"><span>8</span></div>
+              <div class="profile"><span>9</span></div>
+              <div class="profile"><span>10</span></div>
+              <div class="profile">
+                <span>11</span>
+                <div class="pin">
+                  <span>fabrication</span>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="profile"><span>12</span></div>
+              <div class="profile"><span>13</span></div>
+              <div class="profile">
+                <span>14</span>
+                <div class="gr">
+                  <span>cutting</span>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="profile"><span>15</span></div>
+              <div class="profile">
+                <span>16</span>
+                <div class="orange">
+                  <span>scanner</span>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="profile"><span>17</span></div>
+              <div class="profile"><span>18</span></div>
+              <div class="profile">
+                <span>19</span>
+                <div class="sky">
+                  <span>transport</span>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="profile"><span>20</span></div>
+              <div class="profile"><span>21</span></div>
+              <div class="profile"><span>22</span></div>
+              <div class="profile">
+                <span>23</span>
+                <div class="pin">
+                  <span>packing</span>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="profile"><span>24</span></div>
+              <div class="profile"><span>25</span></div>
+              <div class="profile"><span>26</span></div>
+              <div class="profile"><span>27</span></div>
+              <div class="profile">
+                <span>28</span>
+                <div class="yel">
+                  <span>installation</span>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="profile">
+                <span>29</span>
+                <div class="p">
+                  <span>packing</span>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+                <div class="o">
+                  <span>scanner</span>
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="profile"><span>30</span></div>
+              <div class="profile"><span>31</span></div>
+              <div class="profile"><span>32</span></div>
+              <div class="profile"><span>33</span></div>
+              <div class="profile"><span>34</span></div>
+              <div class="profile"><span>35</span></div>
+              <!-- =========================== -->
             </div>
-                     <!-- end of tab2 content -->
-               </div>
-            </div>
-        </section>
-        <!-- end of section-2  -->
-      </main>
+            <!-- end of tab2 content -->
+          </div>
+        </div>
+      </section>
+      <!-- end of section-2  -->
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
